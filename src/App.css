@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* .headNav{
+  gap: 20px;
+} */
+.headNav Button{
+  margin-right: 5px;
+color: aquamarine;
+border: none;
+padding: 15px ;
+}
+/* .headNav Button:hover{
+  color: red;
+ cursor: pointer;
+} */
+
+.headNav Button::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background-color: red;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.headNav Button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DSEG7Classic:wght@400&display=swap');
+.calculator-display {
+  font-family: 'DSEG7Classic', monospace;
+  font-size: large;
+  display: flex;
+}
+.numerics{
+  width: 90px;
+  height: 60px;
+}
