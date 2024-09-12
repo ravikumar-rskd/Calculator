@@ -78,3 +78,51 @@ padding: 15px ;
   width: 90px;
   height: 60px;
 }
+
+input{
+  text-align: right;
+  border: none;
+  font-size: large;
+}
+.clear{
+  margin-top: 1%;
+  padding: 1.5%;
+ 
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.buttons button{
+  width: 5rem;
+  font-size: 25px;
+  background-color: rgb(19, 18, 17);
+  color: rgb(223, 216, 216);
+}
+.buttons button:nth-last-child(2),
+.buttons button:nth-last-child(3){
+  background-color: red;
+}
+
+.buttons-numbers{
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.buttons-numbers button:nth-last-child(1), /*to change =,+ buttons colors in a div*/
+.buttons-numbers button:nth-last-child(2){
+  background-color: rgb(26, 201, 26);
+  color: rgb(44, 9, 197);
+}
+.buttons-numbers button:nth-last-child(3){
+  background-color: rgb(19, 18, 17);
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

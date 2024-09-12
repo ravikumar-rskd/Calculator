@@ -8,7 +8,7 @@ const Header=()=>{
     return( 
     <Box display={'flex'} gap={2} sx={{color:'silver',backgroundColor:'black',padding:1}}>
         <Typography variant='h4'sx={{fontWeight:'bold',padding:1}} >
-          CASIO
+          RASIO
         </Typography>
         <nav className='headNav' >
          <Button>HOME</Button>
